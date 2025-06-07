@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    display:flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+header {
+    background-color: #013A63;
+    color: white;
+    padding: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 20px;
+}  
+header a {
+    color: #A9D6E5;
+    text-decoration: none;
+    font-size: 16px;
+} 
+
+.hero {
+    background-image: url('https://via.placeholder.com/1500x500');
+    background-color:#61A5C2;
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.hero h2 {
+    color: white;
+    font-size: 36px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}   
+.hero p {
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}   
+main {
+    flex: 1;
+    padding: 30px 20px;
+}
+.ideas ul {
+    margin-top: 10px;
+    padding-left: 20px;
+}
+.cta {
+    text-align: center;
+    margin-top: 30px;
+}
+.cta button {
+    padding: 15px 30px;
+    font-size: 16px;
+    background-color: #024476;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.4s;
+    cursor: pointer;
+}
+.cta button:hover {
+    background-color: #A9D6E5;
+    color: black;
+
+}
+footer {
+    background-color: #013A63;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%
+}
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: white;
+}
+footer a {
+    color: #A9D6E5;
+    text-decoration: none;
+}   
