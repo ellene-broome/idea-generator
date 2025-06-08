@@ -67,7 +67,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color:  rgba(1, 79, 134, 1). ;
+    background-color:  rgba(1, 79, 134, 1);
     color: white;
 }
 
@@ -76,11 +76,13 @@ nav a:hover {
 
 /* Hero section styles */
 .hero {
+    position: relative;
     background-image: url('https://images.unsplash.com/photo-1529854140025-25995121f16f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-color: rgba(169, 214, 229, 1); 
+    color: white;
     padding: 80px 20px;
     text-align: center;
     text-shadow: rgba(65, 53, 5, 0.6);
@@ -88,6 +90,14 @@ nav a:hover {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+.hero-overlay {
+    background-color: rgba(0,0,0,0.5);
+    padding: 60px 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 800px;
 }
 .hero h1 {
     color: white;
@@ -111,6 +121,7 @@ main {
     margin: 0 auto;
 }
 
+
 .ideas {
     margin-bottom: 40px;
 }
@@ -121,6 +132,15 @@ main {
     color: #468FAF;
     text-align: center;
     text-shadow: #2A6F97 2px 2px 4px;
+}
+
+.ideas p {
+    line-height: 1.6;
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #013A63;
+    text-shadow:2px 2px 4px rgb(17, 69, 86);
 }
 
 .ideas ul {
@@ -182,5 +202,9 @@ footer p {
 footer a {
     color: #A9D6E5;
     text-decoration: none;
-}   
+} 
+footer a:hover {
+    text-decoration: underline;
+    color: white;
+}  
 /* End of footer styles */
