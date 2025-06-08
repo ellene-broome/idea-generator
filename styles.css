@@ -1,89 +1,178 @@
+/* Reset some defaults */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  border: none;
+  cursor: pointer;
+}
+/* stop */
+
+/* Styles for the entire page */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'segoe ui', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #f4f4f4;
     color: #333;
     display:flex;
     flex-direction: column;
-    min-height: 100%;
+    min-height: 100vh;
 }
 
+/* Header styles */
 header {
     background-color: #013A63;
     color: white;
     padding: 20px;
+    display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #A9D6E5;
 }
 
 header h1 {
-    font-size: 20px;
+    font-size: 1.8rem;
+    margin: 0;
+
 }  
 header a {
     color: #A9D6E5;
     text-decoration: none;
     font-size: 16px;
 } 
-
-.hero {
-    background-image: url('https://via.placeholder.com/1500x500');
-    background-color:#61A5C2;
-    background-size: cover;
-    height: 300px;
+/* Navigation styles */
+nav ul {
     display: flex;
+    gap: 1rem;
+}
+
+nav a {
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s ease;
+}
+
+nav a:hover {
+    background-color:  rgba(1, 79, 134, 1). ;
+    color: white;
+}
+
+/* End of navigation styles */
+/* End of header styles */
+
+/* Hero section styles */
+.hero {
+    background-image: url('https://images.unsplash.com/photo-1529854140025-25995121f16f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: rgba(169, 214, 229, 1); 
+    padding: 80px 20px;
+    text-align: center;
+    text-shadow: rgba(65, 53, 5, 0.6);
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.hero h2 {
+.hero h1 {
     color: white;
-    font-size: 36px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgb(17, 69, 86);
+    margin-bottom: 15px;
 }   
 .hero p {
     color: white;
-    font-size: 18px;
-    margin-top: 10px;
+    font-size: 2.0rem;
+    text-shadow: 2px 2px 4px rgb(17, 69, 86);
+    max-width: 800px;
 }   
+/* End of hero section styles */
+
+/* Main content styles */
 main {
     flex: 1;
     padding: 30px 20px;
+    max-width: 900px;
+    margin: 0 auto;
 }
+
+.ideas {
+    margin-bottom: 40px;
+}
+
+.ideas h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    color: #468FAF;
+    text-align: center;
+    text-shadow: #2A6F97 2px 2px 4px;
+}
+
 .ideas ul {
-    margin-top: 10px;
-    padding-left: 20px;
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
 }
+
+.ideas li {
+  flex: 1 1 250px;
+  padding: 20px;
+  background-color: #ddd;
+  color: #014F86;
+  border: 3px solid #2C7DA0;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  font-size: larger;
+}
+
+
 .cta {
     text-align: center;
     margin-top: 30px;
+    padding: 40px 20px;
+    background-color: rgba(169, 214, 229, 1);
 }
+
 .cta button {
-    padding: 15px 30px;
-    font-size: 16px;
-    background-color: #024476;
+    background-color: #014F86;
     color: white;
+    font-size: 1.2rem;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
     transition: background-color 0.4s;
     cursor: pointer;
 }
 .cta button:hover {
-    background-color: #A9D6E5;
+    background-color: #61A5C2;
     color: black;
 
 }
+/* End of main content styles */
+
+/* Footer styles */
 footer {
-    background-color: #013A63;
-    color: white;
     text-align: center;
     padding: 20px;
-    position: relative;
-    bottom: 0;
-    width: 100%
+    background-color: #013A63;
+    color: white;
+    font-size: .9rem;
+    border-top: 3px solid #A9D6E5;
 }
 footer p {
     margin: 0;
@@ -94,3 +183,4 @@ footer a {
     color: #A9D6E5;
     text-decoration: none;
 }   
+/* End of footer styles */
