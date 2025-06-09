@@ -160,6 +160,21 @@ main {
   font-size: larger;
 }
 
+#idea-box {
+    font-size: 1.5rem;
+    padding: 1rem;
+    margin-top: 1rem;
+    background-color: #A9D6E5;
+    border-left: 5px solid #014F86;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+   
+}
+#idea-box.show {
+    opacity: 1;
+    visibility: visible;
+}
+
 
 .cta {
     text-align: center;
@@ -183,6 +198,22 @@ main {
     color: black;
 
 }
+
+.favorite-button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    font-size: 1rem;
+    border: none;
+    background-color: #014F86;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.favorite-button:hover {
+    background-color: #61A5C2;
+    color: black;
+}   
 /* End of main content styles */
 
 /* Footer styles */
@@ -211,15 +242,17 @@ footer a:hover {
 
 /* adding for js */
 .fade-in {
-    animation: fadeIn 0.5s ease-in;
-    opacity: 1;
+    animation: fadeIn 0.5s ease forward;
+   
 }
 
 @keyframes fadeIn {
     from {
         opacity: 0;
+        transform: translateY(100px);
     }
     to {
         opacity: 1;
+        transform: translateY(0);
     }
 }
