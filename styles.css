@@ -208,3 +208,18 @@ footer a:hover {
     color: white;
 }  
 /* End of footer styles */
+
+/* adding for js */
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
